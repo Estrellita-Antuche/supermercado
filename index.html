@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CUENTAFACILSA</title>
+	<style type="text/css">
+		body {
+			background: plum;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			border-radius: 25px;
+			min-height: 100px;
+			width: 100%;
+			font-family: Broadway;
+			font-size: 3em;
+			text-align: center;
+			background-color: mediumpurple;
+			color: lightblue;
+			margin: 20px 0;
+			padding: 20px 0;
+			text-shadow: 2px 20px 10px blueviolet;
+			box-shadow: 2px 2px 10px blueviolet;
+		}
+		nav {
+			border-radius: 15px;
+			height: 60px;
+			width: 92%;
+			margin: 20px auto;
+			background-color: papayawhip;
+			color: white;
+			padding: 10px 40px;
+			font-size: 1.2em;
+			font-weight: bold;
+			font-style: italic;
+		}
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		main {
+			min-height: calc(100vh - 200px);
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		section {
+			border-radius: 15px;
+			flex: 1 1 75%;
+			background-color: ivory;
+			padding: 20px;
+			margin: 20px;
+		}
+		aside {
+			border-radius: 15px;
+			flex: 1 1 24%;
+			background-color: pink;
+			margin: 20px;
+			padding: 20px;
+		}
+		footer {
+			background-color: #33ffb3;
+			border: 5px solid black;
+			min-height: 100px;
+			width: 100%;
+			font-family: Arial Black;
+			color: white;
+			font-size: 1.5em;
+			text-align: center;
+			padding: 5px 0;
+		}
+		ol {
+			list-style: none;
+			padding: 0;
+		}
+		img {
+			height: 150px;
+			width: 100%;
+			object-fit: cover;
+			margin: 10px 0;
+		}
+		div {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+			grid-template-rows: 250px;
+		}
+
+		/* Responsive styles */
+		@media (max-width: 768px) {
+			header {
+				font-size: 2.5em;
+			}
+			nav {
+				padding: 10px 20px;
+			}
+			main {
+				flex-direction: column;
+			}
+			section, aside {
+				flex: 1 1 100%;
+			}
+		}
+
+		@media (max-width: 480px) {
+			header {
+				font-size: 2em;
+			}
+			nav {
+				font-size: 1em;
+			}
+			footer {
+				font-size: 1.2em;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>MINSU</header>
+	<nav>
+		<ul>
+			<li><a href="#ini">Inicio</a></li>
+			<li><a href="#mis">Misión</a></li>
+			<li><a href="#vis">Visión</a></li>
+			<li><a href="#pro">Productos</a></li>
+			<li><a href="#ser">Servicios</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h1 id="ini">Inicio</h1>
+			Somos una empresa que se dedica a brindar servicios contables a las personas para 
+			resolución de casos que puedan ser una amenaza para sus negocios, de igual manera dar una asesoria a sus necesidades y acciones
+			<hr>
+			<h1 id="mis">Misión</h1>
+			Nuestra misión es dar los mejores servicios a nuestros clientes para tener un buen funcionamiento de su negocio y trámites diarios
+			<hr>
+			<h1 id="vis">Visión</h1>
+			Nuestra visión es llegar a ser una de las mejores empresas que se dedica al áera contable mediante asesoria y ser reconocidos nacionalmente por grandes empresas.
+			<hr>
+			<h1 id="pro">Productos</h1>
+			Contamos los siguientes productos ....
+			<div>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEICB_tmzKx7_KuDHhFFmNRqHhf6adejH0w&s" alt="Calculadora" title="Calculadora">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxqO7tVxwotmtgTdwxHgRM_kfMnjw9tvG7fw&s" alt="Libro Contable" title="Libro Contable">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy8mOVLZx9x-akpk-Mgl2bMA9_WS7L8Jq5_Q&s" alt="Agendas" title="Agendas">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8px8dKsv5QCGpwVABSBVYdE-ygc0Moq1qw&s"alt="Boligrafos" title="Boligrafos">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK5AvnoTceFFkUblmUz91LHzTVpiGDagWcrQ&s" alt="Engrapadora" title="Engrapadora">
+			</div>
+			<hr>
+			<h1 id="ser">Servicios</h1>
+			Los servicios que prestamos son los siguientes ....
+		</section>
+		<aside>
+			<ol>
+				<li><a href="https://economipedia.com/definiciones/inventario.html" target="_blank">Inventarios</a></li>
+				<li><a href="https://economipedia.com/definiciones/balance-de-situacion.html" target="_blank">Balance</a></li>
+				<li><a href="https://economipedia.com/definiciones/ajuste-contable.html" target="_blank">Ajustes</a></li>
+				<li><a href="https://contabilizable.com/calculo-de-impuestos" target="_blank">Cálculos de Impuestos</a></li>
+			</ol>
+		</aside>
+	</main>
+	<footer>
+		Teléfono: 66358923
+		<br>
+		e-mail: minsu@gmail.com
+	</footer>
+</body>
+</html>
